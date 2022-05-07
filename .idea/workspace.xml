@@ -3,17 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="34844c84-0ec9-4d94-835a-08bf747f6cbc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Animal/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Animal/Mammal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Mammal/Mammal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Animal/Mammal/Bear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Mammal/Bear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Animal/Mammal/Tiger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Mammal/Tiger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Animal/Mammal/Whale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Mammal/Whale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Animal/Mammal/Wolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Mammal/Wolf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Animal/Other.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Other/Other.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Animal/Other/Eagle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Other/Eagle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Animal/Other/Goldfish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Other/Goldfish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Animal/Other/Penguin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Other/Penguin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/Employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Employee/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Enclosure/Enclosure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Enclosure/Enclosure.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +60,9 @@
       <workItem from="1651333812136" duration="1653000" />
       <workItem from="1651494269443" duration="5470000" />
       <workItem from="1651673964373" duration="136000" />
-      <workItem from="1651950526845" duration="943000" />
+      <workItem from="1651950526845" duration="1107000" />
+      <workItem from="1651951639573" duration="71000" />
+      <workItem from="1651951843125" duration="2369000" />
     </task>
     <servers />
   </component>

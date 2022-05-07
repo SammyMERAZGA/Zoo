@@ -7,21 +7,23 @@ import java.util.ArrayList;
 public abstract class Enclosure {
 
     // attributes
-    private String name; // (ex: "Enclos de Tigre")
+    private String name; // (ex: "Enclos 3")
     private int area; // (ex: 100)
     private int maxNbAnimals; // (ex: 10)
     private int nbAnimalsPresent; // (ex: 7)
     private ArrayList<Animal> animals; // (ex: ["Tigre blanc", "Tigre d'Asie", "Tigre du Bengale"])
     private byte cleanlinessDegree; // (ex: 7 (0-10))
+    private String typeAnimal; // (ex: "Tigre")
 
     // constructor
-    public Enclosure(String name, int area, int maxNbAnimals, int nbAnimalsPresent, ArrayList<Animal> animals, byte cleanlinessDegree) {
+    public Enclosure(String name, int area, int maxNbAnimals, int nbAnimalsPresent, ArrayList<Animal> animals, byte cleanlinessDegree, String typeAnimal) {
         this.name = name;
         this.area = area;
         this.maxNbAnimals = maxNbAnimals;
         this.nbAnimalsPresent = nbAnimalsPresent;
         this.animals = animals;
         this.cleanlinessDegree = cleanlinessDegree;
+        this.typeAnimal = typeAnimal;
     }
 
     // getters
@@ -49,6 +51,10 @@ public abstract class Enclosure {
         return cleanlinessDegree;
     }
 
+    public String getTypeAnimal() {
+        return typeAnimal;
+    }
+
     // setters
     public void setName(String name) {
         this.name = name;
@@ -74,12 +80,17 @@ public abstract class Enclosure {
         this.cleanlinessDegree = cleanlinessDegree;
     }
 
+    public void setTypeAnimal(String typeAnimal) {
+        this.typeAnimal = typeAnimal;
+    }
+
     // methods
     public void displayEnclosureAndAnimalsCharacteristics() {
         System.out.println("\n" + this.getName() + " :");
         System.out.println("\t- Surface : " + this.getArea() + " m²");
         System.out.println("\t- Nombre d'animaux présents : " + this.getNbAnimalsPresent());
         System.out.println("\t- Nombre d'animaux maximum : " + this.getMaxNbAnimals());
+        System.out.println("\t- Type d'animaux de l'enclos : " + this.getTypeAnimal());
         System.out.println("\t- Niveau de propreté : " + this.getCleanlinessDegree() + "/10");
         System.out.println("\t- Liste des animaux : ");
         for (Animal animal : this.getAnimals()) {
@@ -88,7 +99,7 @@ public abstract class Enclosure {
     }
 
     public void addAnimal(Animal animal) {
-        if(this.getNbAnimalsPresent() < this.getMaxNbAnimals()) {
+        if(this.getNbAnimalsPresent() < this.getMaxNbAnimals() && animal.getName() == this.getTypeAnimal()) {
             this.getAnimals().add(animal);
             this.setNbAnimalsPresent(this.getNbAnimalsPresent() + 1);
             System.out.println("\n" + animal.getName() + " a été ajouté à l'enclos " + this.getName() + ".");
