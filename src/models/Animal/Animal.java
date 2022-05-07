@@ -3,13 +3,13 @@ package models.Animal;
 public abstract class Animal {
 
     // attributes
-    private String name; // (ex: "lion")
+    private String name; // (ex: "Lion")
     private String sex; // (ex: "Female")
     private double weight; // (ex: 130.2)
     private double size; // (ex: 1,6)
-    private boolean hungerIndicator; // (ex: false)
-    private boolean sleepIndicator; // (ex: true)
-    private boolean healthIndicator; // (ex: true)
+    private boolean hungerIndicator; // (false : pas faim ; true : a faim)
+    private boolean sleepIndicator; // (false : ne dort pas ; true : dort)
+    private boolean healthIndicator; // (false : mal ; true : bien)
 
     // constructor
     public Animal(String name, String sex, double weight, double size, boolean hungerIndicator, boolean sleepIndicator, boolean healthIndicator) {

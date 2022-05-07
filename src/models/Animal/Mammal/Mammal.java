@@ -1,4 +1,6 @@
-package models.Animal;
+package models.Animal.Mammal;
+
+import models.Animal.Animal;
 
 public abstract class Mammal extends Animal {
 
