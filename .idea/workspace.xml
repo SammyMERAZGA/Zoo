@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34844c84-0ec9-4d94-835a-08bf747f6cbc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/views/Dashboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ZooMain/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ZooMain/Zoo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/EnclosureView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/EnclosureView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/View.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +50,20 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Zoo">
+    <configuration name="Dashboard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="views.Dashboard" />
+      <module name="Zoo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="views.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Zoo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ZooMain.Zoo" />
       <module name="Zoo" />
@@ -63,6 +80,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Zoo" />
+        <item itemvalue="Application.Dashboard" />
       </list>
     </recent_temporary>
   </component>
@@ -82,7 +100,8 @@
       <workItem from="1651950526845" duration="1107000" />
       <workItem from="1651951639573" duration="71000" />
       <workItem from="1651951843125" duration="2400000" />
-      <workItem from="1651990503586" duration="2363000" />
+      <workItem from="1651990503586" duration="2425000" />
+      <workItem from="1651999413830" duration="2314000" />
     </task>
     <servers />
   </component>
