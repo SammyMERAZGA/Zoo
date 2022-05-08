@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="34844c84-0ec9-4d94-835a-08bf747f6cbc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Animal/Mammal/Bear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Mammal/Bear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Animal/Other/Eagle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Other/Eagle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Animal/Other/Goldfish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Other/Goldfish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Animal/Other/Penguin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Other/Penguin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Animal/Shark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Shark.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +12,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -51,6 +46,26 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Zoo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ZooMain.Zoo" />
+      <module name="Zoo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ZooMain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Zoo" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,7 +82,7 @@
       <workItem from="1651950526845" duration="1107000" />
       <workItem from="1651951639573" duration="71000" />
       <workItem from="1651951843125" duration="2400000" />
-      <workItem from="1651990503586" duration="1498000" />
+      <workItem from="1651990503586" duration="2363000" />
     </task>
     <servers />
   </component>
