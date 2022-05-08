@@ -1,6 +1,8 @@
 package models.Animal;
 
-public class Shark extends Animal {
+import models.Interface.MarineAnimal;
+
+public class Shark extends Animal implements MarineAnimal {
 
     // Un requin n'est pas un mammifère (c'est un poisson) mais c'est un animal qui met bas (il ne fait pas d'oeufs).
     // Le temps de gestation du requin est d'environ au minimum 42 mois.
@@ -29,5 +31,11 @@ public class Shark extends Animal {
         if(super.getSex().equals("Female") && this.getDurationGestationShark() > 42) {
             System.out.println("Le requin femelle vient de mettre bas !");
         }
+    }
+
+    @Override
+    public boolean swim() {
+        System.out.println("Le requin est en train de nager !");
+        return true;
     }
 }
