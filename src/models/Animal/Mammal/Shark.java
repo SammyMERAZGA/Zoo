@@ -1,18 +1,16 @@
-package models.Animal;
+package models.Animal.Mammal;
 
+import models.Animal.Mammal.Mammal;
 import models.Interface.MarineAnimal;
 
-public class Shark extends Animal implements MarineAnimal {
-
-    // Un requin n'est pas un mammifère (c'est un poisson) mais c'est un animal qui met bas (il ne fait pas d'oeufs).
-    // Le temps de gestation du requin est d'environ au minimum 42 mois.
+public class Shark extends Mammal implements MarineAnimal {
 
     // attributes
     private byte durationGestationShark; // (ex: 20 (mois))
 
     // constructor
-    public Shark(String name, String sex, double weight, double size, boolean hungerIndicator, boolean sleepIndicator, boolean healthIndicator, byte durationGestationShark) {
-        super(name, sex, weight, size, hungerIndicator, sleepIndicator, healthIndicator);
+    public Shark(String name, String sex, double weight, double size, boolean hungerIndicator, boolean sleepIndicator, boolean healthIndicator, byte durationGestation, byte durationGestationShark) {
+        super(name, sex, weight, size, hungerIndicator, sleepIndicator, healthIndicator, durationGestation);
         this.durationGestationShark = durationGestationShark;
     }
 

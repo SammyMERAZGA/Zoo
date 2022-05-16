@@ -74,4 +74,7 @@ public class Dashboard extends JFrame {
         setVisible(true);
 
     }
+    public static int readInt() {
+        return Integer.parseInt(JOptionPane.showInputDialog("Entrez un chiffre"));
+    }
 }
