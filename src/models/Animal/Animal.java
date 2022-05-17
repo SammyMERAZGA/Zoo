@@ -2,6 +2,7 @@ package models.Animal;
 
 public abstract class Animal {
 
+    public static Animal Mammal;
     // attributes
     private String name; // (ex: "Lion")
     private String sex; // (ex: "Female")
@@ -82,7 +83,7 @@ public abstract class Animal {
 
     // methods
     public void eat() {
-        if(hungerIndicator == true) {
+        if(hungerIndicator == true  && sleepIndicator == false) {
             System.out.println(this.name + " est en train de manger");
             this.hungerIndicator = false;
             System.out.println(this.name + " n'a plus faim");
