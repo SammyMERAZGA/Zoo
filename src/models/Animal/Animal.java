@@ -88,6 +88,9 @@ public abstract class Animal {
             this.hungerIndicator = false;
             System.out.println(this.name + " n'a plus faim");
         }
+        else {
+            System.out.println(this.name + " n'a pas faim");
+        }
     }
 
     public void makeSound() {

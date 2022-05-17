@@ -4,8 +4,15 @@
     <list default="true" id="34844c84-0ec9-4d94-835a-08bf747f6cbc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ZooMain/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ZooMain/Zoo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/AnimalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AnimalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/Animal/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Animal/Mammal/Bear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Mammal/Bear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Animal/Mammal/Shark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Mammal/Shark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Animal/Mammal/Tiger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Mammal/Tiger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Animal/Mammal/Whale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Mammal/Whale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Animal/Mammal/Wolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Mammal/Wolf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/AnimalView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AnimalView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/DashboardView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +57,8 @@
   }
 }</component>
   <component name="RunManager" selected="Application.Zoo">
-    <configuration name="Dashboard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="views.Dashboard" />
+    <configuration name="DashboardView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="views.DashboardView" />
       <module name="Zoo" />
       <extension name="coverage">
         <pattern>
@@ -79,7 +86,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Zoo" />
-        <item itemvalue="Application.Dashboard" />
+        <item itemvalue="Application.DashboardView" />
       </list>
     </recent_temporary>
   </component>
@@ -103,7 +110,8 @@
       <workItem from="1651999413830" duration="2425000" />
       <workItem from="1652692466642" duration="734000" />
       <workItem from="1652694356214" duration="143000" />
-      <workItem from="1652794185847" duration="2893000" />
+      <workItem from="1652794185847" duration="4264000" />
+      <workItem from="1652808976213" duration="5918000" />
     </task>
     <servers />
   </component>

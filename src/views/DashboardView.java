@@ -4,17 +4,9 @@ import controllers.DashboardController;
 
 import javax.swing.*;
 
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
-
 import java.util.Scanner;
 
-public class Dashboard extends JFrame {
-
-    public Dashboard(){
-        super("Gestion du Zoo");
-    }
+public class DashboardView {
 
     public void menu() {
         System.out.println("Choisir une option :");

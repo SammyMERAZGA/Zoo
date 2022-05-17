@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 public class AnimalView {
 
+    String animals = "";
+
     public void chooseAnAnimal() {
         System.out.println("Voici la liste des animaux :");
         System.out.println("1 - Loups 🐺");
@@ -25,35 +27,43 @@ public class AnimalView {
         switch (choice) {
             case 1:
                 System.out.println("Vous avez choisi les loups 🐺");
-                actionsWithAnimals();
+                this.animals = "loups";
+                actionsWithAnimals(animals);
                 break;
             case 2:
                 System.out.println("Vous avez choisi les tigres 🐯");
-                actionsWithAnimals();
+                this.animals = "tigres";
+                actionsWithAnimals(animals);
                 break;
             case 3:
                 System.out.println("Vous avez choisi les ours 🐻");
-                actionsWithAnimals();
+                this.animals = "ours";
+                actionsWithAnimals(animals);
                 break;
             case 4:
                 System.out.println("Vous avez choisi les baleines 🐳");
-                actionsWithAnimals();
+                this.animals = "baleines";
+                actionsWithAnimals(animals);
                 break;
             case 5:
                 System.out.println("Vous avez choisi les poissons rouges 🐡");
-                actionsWithAnimals();
+                this.animals = "poissons rouges";
+                actionsWithAnimals(animals);
                 break;
             case 6:
                 System.out.println("Vous avez choisi les requins 🦈");
-                actionsWithAnimals();
+                this.animals = "requins";
+                actionsWithAnimals(animals);
                 break;
             case 7:
                 System.out.println("Vous avez choisi les aigles 🦅");
-                actionsWithAnimals();
+                this.animals = "aigles";
+                actionsWithAnimals(animals);
                 break;
             case 8:
                 System.out.println("Vous avez choisi les pingouins 🐧");
-                actionsWithAnimals();
+                this.animals = "pingouins";
+                actionsWithAnimals(animals);
                 break;
             default:
                 System.out.println("Vous avez choisi des animaux qui n'existent pas !");
@@ -61,15 +71,15 @@ public class AnimalView {
         }
     }
 
-    public void actionsWithAnimals() {
-        System.out.println("Que voulez-vous faire avec ces animaux ? ");
+    public void actionsWithAnimals(String animals) {
+        System.out.println("Que voulez-vous faire avec les " + animals + " ?");
         System.out.println("1 - Les nourrir 🍽");
         System.out.println("2 - Les soigner 💊");
         System.out.println("3 - Les faire émettre un cri 🔊");
         System.out.println("4 - Les faire dormir 💤");
         System.out.println("5 - Quitter");
 
-        AnimalController.chooseTheActions();
+        AnimalController.chooseTheActions(animals);
     }
 
 }

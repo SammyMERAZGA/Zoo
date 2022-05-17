@@ -1,13 +1,13 @@
 package ZooMain;
 
-import views.Dashboard;
+import views.DashboardView;
 
 public class Zoo {
 
     public static void main(String[] args) {
         System.out.println("--- Bienvenue dans l'application de gestion de Zoo ! 🦁🐳🦅 ---");
 
-        Dashboard dashboard = new Dashboard();
+        DashboardView dashboard = new DashboardView();
         dashboard.menu();
 
         dashboard.returnToMenu();
