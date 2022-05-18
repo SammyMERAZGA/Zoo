@@ -1,6 +1,7 @@
 package views;
 
 import controllers.AnimalController;
+import models.Animal.Mammal.Mammal;
 
 import java.util.Scanner;
 
@@ -77,7 +78,16 @@ public class AnimalView {
         System.out.println("2 - Les soigner 💊");
         System.out.println("3 - Les faire émettre un cri 🔊");
         System.out.println("4 - Les faire dormir 💤");
-        System.out.println("5 - Quitter");
+        if (animals.equals("loups") || animals.equals("tigres") || animals.equals("ours") || animals.equals("pingouins")) {
+            System.out.println("5.A - Les faire vagabonder 🏃");
+        }
+        if (animals.equals("ours") || animals.equals("baleines") || animals.equals("poissons rouges") || animals.equals("requins") || animals.equals("pingouins")) {
+            System.out.println("5.B - Les faire nager 🐟");
+        }
+        if (animals.equals("aigles") || animals.equals("pingouins")) {
+            System.out.println("5.C - Les faire voler 🐦");
+        }
+        System.out.println("7 - Quitter");
 
         AnimalController.chooseTheActions(animals);
     }

@@ -10,6 +10,8 @@ public class Zoo {
         DashboardView dashboard = new DashboardView();
         dashboard.menu();
 
-        dashboard.returnToMenu();
+        while ( 1 == 1 ) {
+            dashboard.returnToMenu();
+        }
     }
 }

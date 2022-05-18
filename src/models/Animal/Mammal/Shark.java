@@ -12,7 +12,7 @@ public class Shark extends Mammal implements MarineAnimal {
 
     @Override
     public boolean swim() {
-        System.out.println("Le requin est en train de nager !");
+        System.out.println("Les requins sont en train de nager ! 🦈");
         return true;
     }
 }

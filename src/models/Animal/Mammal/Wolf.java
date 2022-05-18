@@ -11,7 +11,7 @@ public class Wolf extends Mammal implements WanderingAnimal {
 
     @Override
     public boolean wander() {
-        System.out.println("Le loup vagabonde !");
+        System.out.println("Les loups vagabondent ! 🐺");
         return true;
     }
 }

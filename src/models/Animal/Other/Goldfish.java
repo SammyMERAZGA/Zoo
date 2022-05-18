@@ -11,7 +11,7 @@ public class Goldfish extends Other implements MarineAnimal {
 
     @Override
     public boolean swim() {
-        System.out.println("Le poisson rouge est en train de nager !");
+        System.out.println("Les poissons rouges sont en train de nager ! 🐡");
         return true;
     }
 }

@@ -27,7 +27,7 @@ public abstract class Other extends Animal {
     // Voir s'il faut faire un getIncubationTime et vérifier que la durée d'incubation a bien été atteinte
     public void layEggs() {
         if(super.getSex().equals("Female")) {
-            System.out.println(super.getName() + " vient de pondre un oeuf !");
+            System.out.println(super.getName() + " vient de pondre un oeuf ! 🥚");
         }
     }
 }

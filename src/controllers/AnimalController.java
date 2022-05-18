@@ -19,7 +19,7 @@ public class AnimalController {
     public static void chooseTheActions(String animals){
 
         Scanner sc = new Scanner(System.in);
-        int choice = sc.nextInt();
+        String choice = sc.nextLine();
 
         Wolf loup = new Wolf("Bergamo", "Mâle", 26.44, 1.55, false, false, true, (byte) 69);
         Tiger tigre = new Tiger("Austin", "Mâle", 56.44, 1.85, true, false, true, (byte) 102);
@@ -31,7 +31,7 @@ public class AnimalController {
         Penguin pingouin = new Penguin("Tiplouf", "Mâle", 0.72, 0.43, false, true, true, (byte) 37);
 
         switch (choice) {
-            case 1:
+            case "1":
                 System.out.println("Les " + animals + " vont être nourris ! 🍲");
                 switch(animals) {
                     case "loups":
@@ -60,7 +60,7 @@ public class AnimalController {
                         break;
                 }
                 break;
-            case 2:
+            case "2":
                 System.out.println("Les " + animals + " vont être soignés ! 💊");
                 switch(animals) {
                     case "loups":
@@ -89,7 +89,7 @@ public class AnimalController {
                         break;
                 }
                 break;
-            case 3:
+            case "3":
                 System.out.println("Les " + animals +  " vont émettre un son ! 🔊");
                 switch(animals) {
                     case "loups":
@@ -118,7 +118,7 @@ public class AnimalController {
                         break;
                 }
                 break;
-            case 4:
+            case "4":
                 System.out.println("Les " + animals + " vont dormir ! 💤");
                 switch(animals) {
                     case "loups":
@@ -147,7 +147,60 @@ public class AnimalController {
                         break;
                 }
                 break;
-            case 5:
+            case "5.A":
+                System.out.println("Les " + animals + " vont vagadonder ! 🏃");
+                switch(animals) {
+                    case "loups":
+                        loup.wander();
+                        break;
+                    case "tigres":
+                        tigre.wander();
+                        break;
+                    case "ours":
+                        ours.wander();
+                        break;
+                    case "pingouins":
+                        pingouin.wander();
+                }
+                break;
+            case "5.B":
+                System.out.println("Les " + animals + " vont nager ! 🐟");
+                switch(animals) {
+                    case "baleines":
+                        baleine.swim();
+                        break;
+                    case "poissons rouges":
+                        poisson.swim();
+                        break;
+                    case "requins":
+                        requin.swim();
+                        break;
+                    case "ours":
+                        ours.swim();
+                        break;
+                    case "pingouins":
+                        pingouin.swim();
+                        break;
+                }
+                break;
+            case "5.C":
+                System.out.println("Les " + animals + " vont voler ! 🐦");
+                switch(animals) {
+                    case "aigles":
+                        aigle.fly();
+                        break;
+                    case "pingouins":
+                        pingouin.fly();
+                        break;
+                }
+                break;
+            case "6.A":
+                System.out.println("Les " + animals + " vont mettre bas ! 🐾");
+                break;
+            case "6.B":
+                System.out.println("Les " + animals + " vont pondre des oeufs ! 🥚");
+                break;
+            case "7":
                 System.out.println("Vous avez choisi de quitter 👋");
                 break;
             default:

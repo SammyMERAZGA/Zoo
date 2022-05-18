@@ -27,7 +27,7 @@ public abstract class Mammal extends Animal {
     // Voir s'il faut faire un getDurationGestation et vérifier que la durée de gestation a bien été atteinte
     public void giveBirth() {
         if(super.getSex().equals("Female")) {
-            System.out.println(super.getName() + " vient de mettre bas !");
+            System.out.println(super.getName() + " vient de mettre bas ! 🤰");
         }
     }
 }

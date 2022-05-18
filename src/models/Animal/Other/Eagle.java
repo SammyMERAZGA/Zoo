@@ -11,7 +11,7 @@ public class Eagle extends Other implements FlyingAnimal {
 
     @Override
     public boolean fly() {
-        System.out.println("L'aigle est en train de voler");
+        System.out.println("Les aigles sont en train de voler 🦅");
         return true;
     }
 }

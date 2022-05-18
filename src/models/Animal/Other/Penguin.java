@@ -14,11 +14,11 @@ public class Penguin extends Other implements FlyingAnimal, MarineAnimal, Wander
     @Override
     public boolean fly() {
         if(!this.swim() && !this.wander()) {
-            System.out.println("Le pingouin est en train de voler !");
+            System.out.println("Les pingouins sont en train de voler ! 🐧");
             return true;
         }
         else {
-            System.out.println("Actuellement, le pingouin ne peut pas voler.");
+            System.out.println("Actuellement, les pingouins ne peuvent pas voler. ❌");
             return false;
         }
     }
@@ -26,11 +26,11 @@ public class Penguin extends Other implements FlyingAnimal, MarineAnimal, Wander
     @Override
     public boolean swim() {
         if(!this.fly() && !this.wander()) {
-            System.out.println("Le pingouin est en train de nager !");
+            System.out.println("Les pingouins sont en train de nager ! 🐧");
             return true;
         }
         else {
-            System.out.println("Actuellement, le pingouin ne peut pas nager.");
+            System.out.println("Actuellement, les pingouins ne peuvent pas nager. ❌");
             return false;
         }
     }
@@ -38,11 +38,11 @@ public class Penguin extends Other implements FlyingAnimal, MarineAnimal, Wander
     @Override
     public boolean wander() {
         if(!this.fly() && !this.swim()) {
-            System.out.println("Le pingouin est en train de se déplacer !");
+            System.out.println("Les pingouins sont en train de se déplacer ! 🐧");
             return true;
         }
         else {
-            System.out.println("Actuellement, le pingouin ne peut pas se déplacer.");
+            System.out.println("Actuellement, les pingouins ne peuvent pas se déplacer. ❌");
             return false;
         }
     }

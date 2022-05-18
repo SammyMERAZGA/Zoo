@@ -11,7 +11,7 @@ public class Whale extends Mammal implements MarineAnimal {
 
     @Override
     public boolean swim() {
-        System.out.println("La baleine est en train de nager !");
+        System.out.println("Les baleines sont en train de nager ! 🐳");
         return true;
     }
 }

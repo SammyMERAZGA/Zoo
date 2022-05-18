@@ -11,7 +11,7 @@ public class Tiger extends Mammal implements WanderingAnimal {
 
     @Override
     public boolean wander() {
-        System.out.println("Le tigre vagabonde !");
+        System.out.println("Les tigres vagabondent ! 🐅");
         return true;
     }
 }

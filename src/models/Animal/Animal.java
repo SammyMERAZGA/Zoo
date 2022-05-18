@@ -84,37 +84,40 @@ public abstract class Animal {
     // methods
     public void eat() {
         if(hungerIndicator == true  && sleepIndicator == false) {
-            System.out.println(this.name + " est en train de manger");
+            System.out.println(this.name + " a très faim 🍖");
+            System.out.println(this.name + " est en train de manger 🍽");
             this.hungerIndicator = false;
-            System.out.println(this.name + " n'a plus faim");
+            System.out.println(this.name + " n'a plus faim.");
         }
         else {
-            System.out.println(this.name + " n'a pas faim");
+            System.out.println(this.name + " n'a pas faim.");
         }
     }
 
     public void makeSound() {
-        System.out.println(this.name + " est en train d'émettre un son");
+        System.out.println(this.name + " est en train d'émettre un son 🔊");
     }
 
     public void beCared() {
         if(healthIndicator == false) {
-            System.out.println(this.name + " est en train d'être soigné");
+            System.out.println(this.name + " n'est pas en bonne santé, il va être soigné 🤕💊");
+            System.out.println(this.name + " est en train d'être soigné 🏥");
             this.healthIndicator = true;
-            System.out.println(this.name + " est de nouveau en bonne santé");
+            System.out.println(this.name + " est de nouveau en bonne santé ! ✨");
         }
     }
 
     public void sleep() {
         if(sleepIndicator == false) {
-            System.out.println(this.name + " est en train de dormir");
+            System.out.println(this.name + " ne dort pas, il va s'endormir 🥱");
+            System.out.println(this.name + " est en train de dormir 💤");
             this.sleepIndicator = true;
         }
     }
 
     public void wakeUp() {
         if(sleepIndicator == true) {
-            System.out.println(this.name + " vient tout juste de se réveiller");
+            System.out.println(this.name + " vient tout juste de se réveiller ! 🌅");
             this.sleepIndicator = false;
         }
     }

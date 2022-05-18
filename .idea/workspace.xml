@@ -7,12 +7,16 @@
       <change beforePath="$PROJECT_DIR$/src/controllers/AnimalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AnimalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/Animal/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/Animal/Mammal/Bear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Mammal/Bear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Animal/Mammal/Mammal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Mammal/Mammal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/Animal/Mammal/Shark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Mammal/Shark.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/Animal/Mammal/Tiger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Mammal/Tiger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/Animal/Mammal/Whale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Mammal/Whale.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/Animal/Mammal/Wolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Mammal/Wolf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Animal/Other/Eagle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Other/Eagle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Animal/Other/Goldfish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Other/Goldfish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Animal/Other/Other.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Other/Other.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Animal/Other/Penguin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal/Other/Penguin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/AnimalView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AnimalView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/DashboardView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +115,9 @@
       <workItem from="1652692466642" duration="734000" />
       <workItem from="1652694356214" duration="143000" />
       <workItem from="1652794185847" duration="4264000" />
-      <workItem from="1652808976213" duration="5918000" />
+      <workItem from="1652808976213" duration="6377000" />
+      <workItem from="1652859541259" duration="63000" />
+      <workItem from="1652859616610" duration="3228000" />
     </task>
     <servers />
   </component>
