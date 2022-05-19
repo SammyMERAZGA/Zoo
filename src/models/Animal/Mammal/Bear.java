@@ -12,25 +12,13 @@ public class Bear extends Mammal implements WanderingAnimal, MarineAnimal {
 
     @Override
     public boolean swim() {
-        if(!this.wander()) {
-            System.out.println("Les ours sont en train de nager 🐻");
-            return true;
-        }
-        else {
-            System.out.println("Actuellement, les ours ne peuvent pas nager ❌");
-            return false;
-        }
+        System.out.println("Les ours sont en train de nager 🐻");
+        return true;
     }
 
     @Override
     public boolean wander() {
-        if(!this.swim()) {
-            System.out.println("Les ours sont en train de se déplacer 🐻");
-            return true;
-        }
-        else {
-            System.out.println("Actuellement, les ours ne peuvent pas se déplacer ❌");
-            return false;
-        }
+        System.out.println("Les ours sont en train de se déplacer 🐻");
+        return true;
     }
 }

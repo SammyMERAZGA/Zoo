@@ -1,11 +1,7 @@
 package controllers;
 
 import models.Animal.Animal;
-import models.Animal.Mammal.Whale;
-import models.Animal.Mammal.Bear;
-import models.Animal.Mammal.Shark;
-import models.Animal.Mammal.Tiger;
-import models.Animal.Mammal.Wolf;
+import models.Animal.Mammal.*;
 import models.Animal.Other.Goldfish;
 import models.Animal.Other.Eagle;
 import models.Animal.Other.Penguin;
@@ -16,7 +12,7 @@ import java.util.Scanner;
 
 public class AnimalController {
 
-    public static void chooseTheActions(String animals){
+    public static void chooseTheActions(String animals) {
 
         Scanner sc = new Scanner(System.in);
         String choice = sc.nextLine();
@@ -194,11 +190,13 @@ public class AnimalController {
                         break;
                 }
                 break;
-            case "6.A":
-                System.out.println("Les " + animals + " vont mettre bas ! 🐾");
-                break;
-            case "6.B":
-                System.out.println("Les " + animals + " vont pondre des oeufs ! 🥚");
+            case "6":
+                if(animals == "loups" || animals == "tigres" || animals == "ours" || animals == "requins" || animals == "baleines") {
+                    System.out.println("Les " + animals + " femelles vont mettre bas ! 🐾");
+                }
+                else {
+                    System.out.println("Les " + animals + " femelles vont pondre des oeufs ! 🥚");
+                }
                 break;
             case "7":
                 System.out.println("Vous avez choisi de quitter 👋");

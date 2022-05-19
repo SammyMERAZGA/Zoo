@@ -87,6 +87,7 @@ public class AnimalView {
         if (animals.equals("aigles") || animals.equals("pingouins")) {
             System.out.println("5.C - Les faire voler 🐦");
         }
+        System.out.println("6 - Les faire reproduire 🍼");
         System.out.println("7 - Quitter");
 
         AnimalController.chooseTheActions(animals);
