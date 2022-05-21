@@ -85,14 +85,14 @@ public abstract class Enclosure {
     }
 
     // methods
-    public void displayEnclosureAndAnimalsCharacteristics() {
+    public void displayEnclosureAndAnimalsCharacteristics(Enclosure enclosure) {
         System.out.println("\n" + this.getName() + " :");
-        System.out.println("\t- Surface : " + this.getArea() + " m²");
-        System.out.println("\t- Nombre d'animaux présents : " + this.getNbAnimalsPresent());
-        System.out.println("\t- Nombre d'animaux maximum : " + this.getMaxNbAnimals());
-        System.out.println("\t- Type d'animaux de l'enclos : " + this.getTypeAnimal());
-        System.out.println("\t- Niveau de propreté : " + this.getCleanlinessDegree() + "/10");
-        System.out.println("\t- Liste des animaux : ");
+        System.out.println("\t- 📐 Surface : " + this.getArea() + " m²");
+        System.out.println("\t- 🐾 Nombre d'animaux présents : " + this.getNbAnimalsPresent());
+        System.out.println("\t- 👉 Nombre d'animaux maximum : " + this.getMaxNbAnimals());
+        System.out.println("\t- 👉 Type d'animaux de l'enclos : " + this.getTypeAnimal());
+        System.out.println("\t- ✨ Niveau de propreté : " + this.getCleanlinessDegree() + "/10");
+        System.out.println("\t- 👉 Liste des animaux : ");
         for (Animal animal : this.getAnimals()) {
             System.out.println("\t\t- " + animal.getName());
         }

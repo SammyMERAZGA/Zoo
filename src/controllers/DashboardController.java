@@ -2,6 +2,7 @@ package controllers;
 
 import models.Animal.Animal;
 import views.AnimalView;
+import views.EnclosureView;
 
 import java.util.Scanner;
 
@@ -20,6 +21,8 @@ public class DashboardController {
                 break;
             case 2:
                 System.out.println("Vous avez choisi la gestion des enclos 🏞");
+                EnclosureView enclosureView = new EnclosureView();
+                enclosureView.chooseAnEnclosure();
                 break;
             case 3:
                 System.out.println("Vous avez choisi la gestion des zoos 🦒");

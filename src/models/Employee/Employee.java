@@ -44,7 +44,7 @@ public class Employee {
 
     // Methods
     public void examineEnclosure(Enclosure enclosure) {
-        enclosure.displayEnclosureAndAnimalsCharacteristics();
+        enclosure.displayEnclosureAndAnimalsCharacteristics(enclosure);
     }
 
     public void cleanEnclosure(Enclosure enclosure) {
