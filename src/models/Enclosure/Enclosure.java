@@ -98,21 +98,23 @@ public abstract class Enclosure {
         }
     }
 
-    public void addAnimal(Animal animal) {
-        if(this.getNbAnimalsPresent() < this.getMaxNbAnimals() && animal.getName() == this.getTypeAnimal()) {
+    public void addAnimal(Animal animal, Enclosure enclosure) {
+        if(this.getNbAnimalsPresent() < this.getMaxNbAnimals() /* && animal.getName() == this.getTypeAnimal() */) {
             this.getAnimals().add(animal);
             this.setNbAnimalsPresent(this.getNbAnimalsPresent() + 1);
-            System.out.println("\n" + animal.getName() + " a été ajouté à l'enclos " + this.getName() + ".");
+            this.setAnimals(this.getAnimals());
+            System.out.println("\n" + animal.getName() + " a été ajouté à l'enclos " + this.getName() + " ✨ .");
         }
         else {
-            System.out.println("\nL'enclos " + this.getName() + " est plein.");
+            System.out.println("\nL'enclos " + this.getName() + " est plein ❌.");
         }
     }
 
-    public void removeAnimal(Animal animal) {
+    public void removeAnimal(Animal animal, Enclosure enclosure) {
         if(this.getNbAnimalsPresent() > 0) {
             this.getAnimals().remove(animal);
             this.setNbAnimalsPresent(this.getNbAnimalsPresent() - 1);
+            this.setAnimals(this.getAnimals());
             System.out.println("\n" + animal.getName() + " a été retiré de l'enclos " + this.getName() + ".");
         }
         else {
@@ -120,14 +122,14 @@ public abstract class Enclosure {
         }
     }
 
-    public void feedAnimals() {
+    public void feedAnimals(Enclosure enclosure) {
         for (Animal animal : this.getAnimals()) {
             animal.eat();
         }
         System.out.println("\nLes animaux ont été nourris.");
     }
 
-    public void cleaning() {
+    public void cleaning(Enclosure enclosure) {
         if(this.getCleanlinessDegree() < 10) {
             this.setCleanlinessDegree((byte) (this.getCleanlinessDegree() + 1));
             System.out.println("\nL'enclos " + this.getName() + " a été nettoyé.");

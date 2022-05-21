@@ -48,17 +48,17 @@ public class Employee {
     }
 
     public void cleanEnclosure(Enclosure enclosure) {
-        enclosure.cleaning();
+        enclosure.cleaning(enclosure);
     }
 
     public void feedingAnimalsOfEnclosure(Enclosure enclosure) {
-        enclosure.feedAnimals();
+        enclosure.feedAnimals(enclosure);
     }
 
     public void transferringAnimalFromEnclosureToAnother(Animal animal, Enclosure enclosure1, Enclosure enclosure2) {
         if(enclosure1.getAnimals().contains(animal)) {
-            enclosure1.removeAnimal(animal);
-            enclosure2.addAnimal(animal);
+            enclosure1.removeAnimal(animal, enclosure1);
+            enclosure2.addAnimal(animal, enclosure2);
             System.out.println("L'animal a été transféré avec succès !");
         } else {
             System.out.println("L'animal est introuvable dans l'enclos !");

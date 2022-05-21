@@ -26,8 +26,8 @@ public class Aviary extends Enclosure {
     }
 
     // Methods
-    public void roofCageVerification() {
-        cleaning();
+    public void roofCageVerification(Enclosure enclosure) {
+        cleaning(enclosure);
         if (getHeight() == this.height) {
             System.out.println("La volière a bien été entretenu !");
         }
