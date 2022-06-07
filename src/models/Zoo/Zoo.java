@@ -62,10 +62,10 @@ public class Zoo {
         }
     }
 
-    public void showAnimalsInAllEnclosures() {
+    /*public void showAnimalsInAllEnclosures() {
         for (Enclosure enclosure : existingEnclosures) {
             System.out.println(enclosure.getName() + ": ");
             enclosure.getAnimals().forEach(animal -> System.out.println(animal.getName()));
         }
-    }
+    }*/
 }

@@ -16,13 +16,31 @@ import java.util.Scanner;
 
 public class EnclosureController {
 
-    public static void chooseAnAction(String enclosure) {
+    private Scanner sc;
+    private int choice;
+    private StandardEnclosure enclosLoup;
+    private StandardEnclosure enclosTigre;
+    private StandardEnclosure enclosOurs;
+    private StandardEnclosure enclosPinguin;
+    private Aviary enclosAigle;
+    private Aquarium enclosPoissonRouge;
+    private Aquarium enclosRequin;
+    private Aquarium enclosBaleine;
+    private Animal loup2;
+    private Animal loup3;
+    private Animal tigre2;
+    private Animal ours2;
+    private Animal aigle2;
+    private Animal poisson2;
+    private Animal requin2;
+    private Animal baleine2;
+    private Animal pingouin2;
 
-        Scanner sc = new Scanner(System.in);
-        int choice = sc.nextInt();
+    public EnclosureController() {
+        sc = new Scanner(System.in);
 
         // Animals List
-        List<Animal> wolfList = new ArrayList<>();
+        List<Wolf> wolfList = new ArrayList<>();
         wolfList.add(new Wolf("Bergamo", "Mâle", 26.44, 1.55, false, false, true, (byte) 69));
 
         List<Animal> tigerList = new ArrayList<>();
@@ -47,25 +65,32 @@ public class EnclosureController {
         penguinList.add(new Penguin("Tiplouf", "Mâle", 0.72, 0.43, false, true, true, (byte) 37));
 
         // Enclosures
-        StandardEnclosure enclosLoup = new StandardEnclosure("Enclos de loups", 950, 15, 1, (ArrayList<Animal>) wolfList, (byte) 4, "Loup");
-        StandardEnclosure enclosTigre = new StandardEnclosure("Enclos de tigres", 1200, 12, 1, (ArrayList<Animal>) tigerList, (byte) 7, "Tigre");
-        StandardEnclosure enclosOurs = new StandardEnclosure("Enclos d'ours", 1280, 7, 1, (ArrayList<Animal>) bearList, (byte) 5, "Ours");
-        Aquarium enclosBaleine = new Aquarium("Enclos de baleines", 12000, 5, 1, (ArrayList<Animal>) whaleList, (byte) 10, "Baleine", 500, 3);
-        Aquarium enclosPoissonRouge = new Aquarium("Enclos de poissons rouges", 500, 40, 1, (ArrayList<Animal>) goldfishList, (byte) 10, "Poisson rouge", 15, 3);
-        Aquarium enclosRequin = new Aquarium("Enclos de requins", 7000, 10, 1, (ArrayList<Animal>) sharkList, (byte) 7, "Requin", 200, 3);
-        Aviary enclosAigle = new Aviary("Enclos d'aigles", 5000, 10, 1, (ArrayList<Animal>) eagleList, (byte) 5, "Aigle", 100);
-        StandardEnclosure enclosPinguin = new StandardEnclosure("Enclos de pingouins", 800, 40, 1, (ArrayList<Animal>) penguinList, (byte) 9, "Pinguin");
+        enclosLoup = new StandardEnclosure("Enclos de loups", 950, 15, 1, (ArrayList<Wolf>) wolfList, (byte) 4, "Loup");
+        enclosTigre = new StandardEnclosure("Enclos de tigres", 1200, 12, 1, (ArrayList<Animal>) tigerList, (byte) 7, "Tigre");
+        enclosOurs = new StandardEnclosure("Enclos d'ours", 1280, 7, 1, (ArrayList<Animal>) bearList, (byte) 5, "Ours");
+        enclosBaleine = new Aquarium("Enclos de baleines", 12000, 5, 1, (ArrayList<Animal>) whaleList, (byte) 10, "Baleine", 500, 3);
+        enclosPoissonRouge = new Aquarium("Enclos de poissons rouges", 500, 40, 1, (ArrayList<Animal>) goldfishList, (byte) 10, "Poisson rouge", 15, 3);
+        enclosRequin = new Aquarium("Enclos de requins", 7000, 10, 1, (ArrayList<Animal>) sharkList, (byte) 7, "Requin", 200, 3);
+        enclosAigle = new Aviary("Enclos d'aigles", 5000, 10, 1, (ArrayList<Animal>) eagleList, (byte) 5, "Aigle", 100);
+        enclosPinguin = new StandardEnclosure("Enclos de pingouins", 800, 40, 1, (ArrayList<Animal>) penguinList, (byte) 9, "Pinguin");
 
         // Animals to add to the enclosure
-        Wolf loup2 = new Wolf("Bergamette", "Femelle", 26.44, 1.55, false, false, true, (byte) 69);
-        Tiger tigre2 = new Tiger("Austinette", "Femelle", 56.44, 1.85, true, false, true, (byte) 102);
-        Bear ours2 = new Bear("Boubette", "Femelle", 155.53, 2.65, true, false, true, (byte) 225);
-        Whale baleine2 = new Whale("Docker", "Mâle", 27000.49, 11.55, false, false, true, (byte) 365);
-        Goldfish poisson2 = new Goldfish("Dory", "Femelle", 0.11, 0.48, true, false, true, (byte) 5);
-        Shark requin2 = new Shark("Kisamette", "Femelle", 140.32, 3.12, true, false, true, (byte) 274);
-        Eagle aigle2 = new Eagle("Vaututrice", "Mâle", 5.34, 0.98, false, false, true, (byte) 45);
-        Penguin pingouin2 = new Penguin("Linux", "Mâle", 0.72, 0.43, false, true, true, (byte) 37);
+        loup2 = new Wolf("Bergamette", "Femelle", 26.44, 1.55, false, false, true, (byte) 69);
+        loup3 = new Wolf("Bergamettez", "Femelle", 26.44, 1.55, false, false, true, (byte) 69);
+        tigre2 = new Tiger("Austinette", "Femelle", 56.44, 1.85, true, false, true, (byte) 102);
+        ours2 = new Bear("Boubette", "Femelle", 155.53, 2.65, true, false, true, (byte) 225);
+        baleine2 = new Whale("Docker", "Mâle", 27000.49, 11.55, false, false, true, (byte) 365);
+        poisson2 = new Goldfish("Dory", "Femelle", 0.11, 0.48, true, false, true, (byte) 5);
+        requin2 = new Shark("Kisamette", "Femelle", 140.32, 3.12, true, false, true, (byte) 274);
+        aigle2 = new Eagle("Vaututrice", "Mâle", 5.34, 0.98, false, false, true, (byte) 45);
+        pingouin2 = new Penguin("Linux", "Mâle", 0.72, 0.43, false, true, true, (byte) 37);
 
+        System.out.println("Yamete");
+    }
+
+    public void chooseAnAction(String enclosure) {
+
+        choice = sc.nextInt();
 
         switch (choice) {
             case 1:
@@ -100,6 +125,7 @@ public class EnclosureController {
                 switch(enclosure) {
                     case "Enclos de loups":
                         enclosLoup.addAnimal(loup2, enclosLoup);
+                        enclosLoup.addAnimal(loup3, enclosLoup);
                         break;
                     case "Enclos de tigres":
                         enclosTigre.addAnimal(tigre2, enclosTigre);

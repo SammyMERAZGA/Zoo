@@ -6,6 +6,14 @@ import java.util.Scanner;
 
 public class EnclosureView {
 
+    private EnclosureController enclosureController;
+
+    public EnclosureView() {
+        System.out.println("Laul");
+        enclosureController = new EnclosureController();
+        System.out.println("Mdr");
+    }
+
     String enclosure = "";
 
     public void chooseAnEnclosure() {
@@ -80,6 +88,6 @@ public class EnclosureView {
         System.out.println("5 - Entretenir l'enclos 🏠");
         System.out.println("6 - Quitter");
 
-        EnclosureController.chooseAnAction(enclosure);
+        this.enclosureController.chooseAnAction(enclosure);
     }
 }

@@ -4,19 +4,19 @@ import models.Animal.Animal;
 
 import java.util.ArrayList;
 
-public abstract class Enclosure {
+public abstract class Enclosure<T extends Animal> {
 
     // attributes
     private String name; // (ex: "Enclos 3")
     private int area; // (ex: 100)
     private int maxNbAnimals; // (ex: 10)
     private int nbAnimalsPresent; // (ex: 7)
-    private ArrayList<Animal> animals; // (ex: ["Tigre blanc", "Tigre d'Asie", "Tigre du Bengale"])
+    private ArrayList<T> animals; // (ex: ["Tigre blanc", "Tigre d'Asie", "Tigre du Bengale"])
     private byte cleanlinessDegree; // (ex: 7 (0-10))
     private String typeAnimal; // (ex: "Tigre")
 
     // constructor
-    public Enclosure(String name, int area, int maxNbAnimals, int nbAnimalsPresent, ArrayList<Animal> animals, byte cleanlinessDegree, String typeAnimal) {
+    public Enclosure(String name, int area, int maxNbAnimals, int nbAnimalsPresent, ArrayList<T> animals, byte cleanlinessDegree, String typeAnimal) {
         this.name = name;
         this.area = area;
         this.maxNbAnimals = maxNbAnimals;
@@ -43,7 +43,7 @@ public abstract class Enclosure {
         return nbAnimalsPresent;
     }
 
-    public ArrayList<Animal> getAnimals() {
+    public ArrayList<T> getAnimals() {
         return animals;
     }
 
@@ -72,7 +72,7 @@ public abstract class Enclosure {
         this.nbAnimalsPresent = nbAnimalsPresent;
     }
 
-    public void setAnimals(ArrayList<Animal> animals) {
+    public void setAnimals(ArrayList<T> animals) {
         this.animals = animals;
     }
 
@@ -96,14 +96,16 @@ public abstract class Enclosure {
         for (Animal animal : this.getAnimals()) {
             System.out.println("\t\t- " + animal.getName());
         }
+        // System.out.println(this.getAnimals() + "🦒");
     }
 
-    public void addAnimal(Animal animal, Enclosure enclosure) {
+    public void addAnimal(T animal, Enclosure enclosure) {
         if(this.getNbAnimalsPresent() < this.getMaxNbAnimals() /* && animal.getName() == this.getTypeAnimal() */) {
             this.getAnimals().add(animal);
             this.setNbAnimalsPresent(this.getNbAnimalsPresent() + 1);
             this.setAnimals(this.getAnimals());
             System.out.println("\n" + animal.getName() + " a été ajouté à l'enclos " + this.getName() + " ✨ .");
+            // System.out.println(this.getAnimals() + "🦒");
         }
         else {
             System.out.println("\nL'enclos " + this.getName() + " est plein ❌.");

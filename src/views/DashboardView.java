@@ -8,6 +8,12 @@ import java.util.Scanner;
 
 public class DashboardView {
 
+    private DashboardController dashboardController;
+
+    public DashboardView() {
+        dashboardController = new DashboardController();
+    }
+
     public void menu() {
         System.out.println("Choisir une option :");
         System.out.println("1. Gestion des animaux 🦁");
@@ -18,7 +24,6 @@ public class DashboardView {
 
         System.out.println("Veuillez choisir une option :");
 
-        DashboardController dashboardController = new DashboardController();
         dashboardController.chooseOnTheMenu();
     }
 
