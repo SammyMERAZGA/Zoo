@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34844c84-0ec9-4d94-835a-08bf747f6cbc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/ZooController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ZooController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Zoo/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Zoo/Zoo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/EmployeeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/EmployeeView.java" afterDir="false" />
-    </list>
+    <list default="true" id="34844c84-0ec9-4d94-835a-08bf747f6cbc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,7 +117,7 @@
       <workItem from="1654508625397" duration="21000" />
       <workItem from="1654508657510" duration="1031000" />
       <workItem from="1654509693811" duration="2127000" />
-      <workItem from="1654587674331" duration="2496000" />
+      <workItem from="1654587674331" duration="2919000" />
     </task>
     <servers />
   </component>
