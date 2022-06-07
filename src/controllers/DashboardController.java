@@ -4,6 +4,7 @@ import models.Animal.Animal;
 import views.AnimalView;
 import views.EmployeeView;
 import views.EnclosureView;
+import views.ZooView;
 
 import java.util.Scanner;
 
@@ -27,6 +28,8 @@ public class DashboardController {
                 break;
             case 3:
                 System.out.println("Vous avez choisi la gestion des zoos 🦒");
+                ZooView zooView = new ZooView();
+                zooView.chooseZooOption();
                 break;
             case 4:
                 System.out.println("Vous avez choisi la gestion des employés 🧑‍");

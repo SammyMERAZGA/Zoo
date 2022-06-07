@@ -3,6 +3,8 @@ package models.Zoo;
 import models.Employee.Employee;
 import models.Enclosure.Enclosure;
 
+import java.util.ArrayList;
+
 public class Zoo {
 
     // Attributes
