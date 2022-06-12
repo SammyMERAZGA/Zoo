@@ -1,6 +1,8 @@
-### <div align="center"> Hello M. Martin-Nevot <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> <br/> </div>
+### <div align="center"> Hello M. Martin-Nevot 👋 <br/> </div>
 
 ## <div align="center"> Sammy MERAZGA & Sofiane TIGRINE 🤝 </div>
+
+## 🔴 Vidéo du projet 👉 https://www.youtube.com/watch?v=nNrhmGHNpzM
 
 ## <div align="center"> Languages & Tools 🛠 </div>
 
